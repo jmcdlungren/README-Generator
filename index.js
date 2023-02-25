@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('./Utilities/generateMarkdown.js');
 
 const generateREADME = ({ title, description, installation, usage, email, github, tests }) =>
     `# ${title}
@@ -14,7 +15,7 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Questions and Contributing](#questions)
+- [Questions and Contributing](#questions-and-contributing)
 - [Tests](#tests)
 
 ## Installation
@@ -25,13 +26,7 @@ ${installation}
 
 ${usage}
 
-## License
-
-
-
-## Badges
-
-
+${markdown.renderLicenseSection()}
 
 ## Questions and Contributing
 
@@ -78,8 +73,8 @@ inquirer
         {
             type: 'input',
             name: 'tests',
-            message: 'Please enter any applicable tests for this project.',
-        },
+            message: 'Please enter any applicable tests for this project.'
+        }
     ])
     .then((answers) => {
         const READMEcontent = generateREADME(answers);
