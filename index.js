@@ -45,11 +45,6 @@ If you are interested in contributing, please follow the guidelines outlined wit
 
 ${tests}`
 
-// TODO: Create an array of questions for user input
-const questions = [
-
-];
-
 inquirer
     .prompt([
         {
@@ -91,15 +86,13 @@ inquirer
     .then((answers) => {
         const READMEcontent = generateREADME(answers);
 
-        fs.writeFile('README.md', READMEcontent, (err) =>
+        fs.writeFile('./Generated README/README.md', READMEcontent, (err) =>
             err ? console.log(err) : console.log('Successfully created README.md!')
         );
     });
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
 
-// }
+
 
 // TODO: Create a function to initialize app
 function init() {
