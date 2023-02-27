@@ -1,4 +1,4 @@
-# Examples
+# Example
 
 [![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)
 
@@ -28,7 +28,7 @@ Example text
 
 ## Questions and Contributing
 
-If you have any questions, you can contact me by [email](example.email) or through [GitHub](https://github.com/ex.ample).
+If you have any questions, you can contact me by [email](Example text) or through [GitHub](https://github.com/Example text).
 
 If you are interested in contributing, please follow the guidelines outlined within the [Contributor Covenant](https://www.contributor-covenant.org/).
 
