@@ -1,5 +1,7 @@
 # README Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 This generator will assist in creating a README file with all necessary requirements built in. My motivation was to create something that would assist with future projects as they will each need a README file.
@@ -20,12 +22,19 @@ N/A
 
 When needing to create a README, run "node index" within the terminal. It will then prompt you with a series of questions to be answered. The answers will then fill in to their respective sections in the README file.
 
+Screenshot:
+
 ![Screenshot](./Images/Screenshot1.jpg)
-![Video]()
+
+
+GIF of Example Test:
+
+![GIF](./Images/GIF.gif)
+
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[The MIT License](https://opensource.org/licenses/MIT)
 
 ## Questions and Contributing
 
