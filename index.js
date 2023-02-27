@@ -4,7 +4,7 @@ const fs = require('fs');
 
 
 
-function renderLicense(license) {
+function renderLicenseBadge(license) {
     if (license == "The Hippocratic License") {
         console.log("The Hippocratic License is chosen")
         return "[![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)"
@@ -26,12 +26,35 @@ function renderLicense(license) {
         return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
     }
     else if (license == "None") {
-        return ""
+        return "N/A"
+    }
+}
+
+function renderLicense(license) {
+    if (license == "The Hippocratic License") {
+        return "[The Hippocratic License: An Ethical License for Open Source Communities](https://firstdonoharm.dev)"
+    }
+    else if (license == "ISC") {
+        return "[The ISC License](https://opensource.org/licenses/ISC)"
+    }
+    else if (license == "MIT") {
+        return "[The MIT License](https://opensource.org/licenses/MIT)"
+    }
+    else if (license == "Mozilla") {
+        return "[The Mozilla Public License](https://opensource.org/licenses/MPL-2.0)"
+    }
+    else if (license == "Unlicense") {
+        return "[The Unlicense: Dedicating Software to the Public Domain](http://unlicense.org/)"
+    }
+    else if (license == "None") {
+        return "N/A"
     }
 }
 
 const generateREADME = ({ title, description, installation, usage, license, email, github, tests }) =>
     `# ${title}
+
+${renderLicenseBadge(license)}
 
 ## Description
 
