@@ -27,11 +27,6 @@ Screenshot:
 ![Screenshot](./Images/Screenshot1.jpg)
 
 
-GIF of Example Test:
-
-![GIF](./Images/GIF.gif)
-
-
 ## License
 
 [The MIT License](https://opensource.org/licenses/MIT)
@@ -44,4 +39,8 @@ If you are interested in contributing, please follow the guidelines outlined wit
 
 ## Tests
 
-N/A
+[Example Test Video](https://drive.google.com/file/d/1ZTmud7zMMANWmc0MpaB_OC7lL9taU_H1/view)
+
+GIF of Example Test:
+
+![GIF](./Images/GIF.gif)
