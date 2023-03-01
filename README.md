@@ -6,7 +6,7 @@
 
 This generator will assist in creating a README file with all necessary requirements built in. My motivation was to create something that would assist with future projects as they will each need a README file.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
